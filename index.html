@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Three Boxes with the same structure -->
+        <div class="box" onclick="toggleBox(this)">
+            <p>Box 1</p>
+            <div class="options">
+                <select onchange="changeStyle(this, 'color')">
+                    <option value="">Color</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+                <select onchange="changeStyle(this, 'size')">
+                    <option value="">Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="box" onclick="toggleBox(this)">
+            <p>Box 2</p>
+            <div class="options">
+                <select onchange="changeStyle(this, 'color')">
+                    <option value="">Color</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+                <select onchange="changeStyle(this, 'size')">
+                    <option value="">Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="box" onclick="toggleBox(this)">
+            <p>Box 3</p>
+            <div class="options">
+                <select onchange="changeStyle(this, 'color')">
+                    <option value="">Color</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+                <select onchange="changeStyle(this, 'size')">
+                    <option value="">Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
